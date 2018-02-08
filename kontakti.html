@@ -51,7 +51,15 @@
                 <label for="lname">Uzvārds</label>
                 <input type="text" id="lname" name="lastname" placeholder="Tavs Uzvārds..">
 
-                <label for="country">Valsts</label>
+            <label for="fname">Dzimums</label>
+            <form action="" type="text">
+                <input type="radio" name="gender" value="Vīrietis"> Male<br>
+                <input type="radio" name="gender" value="Sieviete"> Female<br>
+                <input type="radio" name="gender" value="Cits"> Other
+            </form>
+
+
+            <label for="country">Valsts</label>
                 <select id="country" name="country">
                     <option value="LVA">Latvia</option>
                     <option value="AFG">Afghanistan</option>
@@ -304,13 +312,15 @@
                     <option value="ZWE">Zimbabwe</option>
                 </select>
 
-                <select name="" id="">
-                	<option value="m">male</option>
-                	<option value="f">female</option>
-                </select>
-
                 <label for="subject">Temats</label>
                 <textarea id="subject" name="subject" placeholder="Tavs jautājums.." style="height:200px"></textarea>
+
+            <form>
+                <div>
+                    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                    <label for="subscribeNews">Saņemt jaunumus pa mājaslapu</label>
+                </div>
+            </form>
 
                 <input type="submit" value="Iesniegt">
         </div>
